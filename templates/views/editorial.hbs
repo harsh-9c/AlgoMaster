@@ -1,0 +1,155 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Editorial</title>
+  </head>
+  <body>
+    <div class="container-fluidc p-4">
+
+      <h2>Problem A</h2>
+      <div class="row">
+        <div class="col-md-3 col-12">
+          <h3 class="m-2 pb-2 ml-3">Recent Contests</h3>
+          <div class="m-4 pb-2">
+            <a
+              class="font-weight-bold"
+              href="#"
+              style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          "
+            >
+              Codeforces Round #741</a>
+          </div>
+          <div class="m-4 pb-2">
+            <a
+              class="font-weight-bold"
+              href="#"
+              style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          "
+            >
+              Codechef April Long Challenge</a>
+          </div>
+          <div class="m-4 pb-2">
+            <a
+              class="font-weight-bold"
+              href="#"
+              style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          "
+            >
+              LeetCode Biweekly Contest #421</a>
+          </div>
+          <div class="m-4 pb-2">
+            <a
+              class="font-weight-bold"
+              href="#"
+              style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          "
+            >
+              Code Studio Contest</a>
+          </div>
+          <div class="m-4 pb-2">
+            <a
+              class="font-weight-bold"
+              href="#"
+              style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          "
+            >
+              Codeforces Div1 + Div2 Round #345</a>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-12 pl-4 shadow-lg">
+          <h1
+            class="font-weight-bold my-5"
+            style="
+              color: black;
+              font-family: 'Ubuntu', sans-serif;
+              font-size: 40px;
+            "
+          >
+            FLIPIT Editorial
+          </h1>
+
+          <h3>DIFFICULTY:</h3>
+          <p style="color: #989898; font-size: 18px">Easy</p>
+
+          <h3>PREREQUISITES:</h3>
+          <p style="color: #989898; font-size: 18px">None</p>
+
+          <h3>PROBLEM:</h3>
+          <p style="color: #989898; font-size: 18px">
+            You are given a binary string SS of length NN. You can perform the
+            following operation on SS: Pick any set of indices such that no two
+            picked indices are adjacent. Flip the values at the picked indices
+            (i.e. change 00 to 11 and 11 to 00). For example, consider the
+            string SS = 11011011101101. Pick the indices
+            \\\\\\\\\\\\\\\\\\\\\\\\{1,3,6\}{1,3,6}. Flipping the values at
+            picked indices, we get
+            \underline{1}1\underline{0}11\underline{0}1→0111111 1 ​ 1 0 ​ 11 0 ​
+            1→0111111. Note that we cannot pick the set \{2,3,5\}{2,3,5} since
+            22 and 33 are adjacent indices. Find the minimum number of
+            operations required to convert all the characters of SS to 00.
+          </p>
+          <h3>EXPLANATION:</h3>
+          <p style="color: #989898; font-size: 18px">
+            For each test case we have a binary string of length NN. Now as no
+            adjacent bits can be flipped together. Three cases are possible:
+            <ul style="color: #989898; font-size: 18px">
+              <li>When the string is already 00, then the number of minimum
+                operations will be zero.</li>
+              <li>When no two adjacent bits are set. In this case all the set
+                bits can be converted to 00 in 11 operation.</li>
+              <li>When the string contains adjacent set bits. In this case it
+                can be shown that the answer will be 22 since all the
+                odd-indexed set bits and even-indexed set bits can be identified
+                as two different sets.</li>
+            </ul>
+            Evaluating all the above possibilities gives us the result.
+          </p>
+          <h3>TIME COMPLEXITY:</h3>
+          <p style="color: #989898; font-size: 18px">O(N) for each test case.</p>
+          <h3>Solution:</h3>
+          <a href="#" style="color: #087f5b;">Solution</a>
+        </div>
+
+      </div>
+    </div>
+    {{>footer}}
+  </body>
+
+</html>

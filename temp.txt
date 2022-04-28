@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Binary Search</title>
+  </head>
+  <body>
+  {{>navbar2}}
+                      <div class="row mt-3">
+      <div class="col-md-3" style="background-color: rgb(244, 244, 247)">
+        <h3 class="m-2 pb-2 ml-3">Table of Content</h3>
+        <div class="m-4 pb-2">
+              <a class="font-weight-bold"
+          href="#"
+          style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+          ">
+            How to create Website using HTML and CSS</a
+          >
+        </div>
+        <div class="m-4 pb-2">
+          <a class="font-weight-bold"
+          href="#"
+          style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          ">
+            Merge sort using divide and conquer approach</a
+          >
+        </div>
+        <div class="m-4 pb-2">
+          <a class="font-weight-bold"
+          href="#"
+          style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          ">
+            Merge sort using divide and conquer approach</a
+          >
+        </div>
+        <div class="m-4 pb-2">
+          <a class="font-weight-bold"
+          href="#"
+          style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          ">
+            Merge sort using divide and conquer approach</a
+          >
+        </div>
+        <div class="m-4 pb-2">
+          <a class="font-weight-bold"
+          href="#"
+          style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          ">
+            Merge sort using divide and conquer approach</a
+          >
+        </div>
+        <div class="m-4 pb-2">
+          <a class="font-weight-bold"
+          href="#"
+          style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          ">
+            How to increase productivity.</a
+          >
+        </div>
+      </div> 
+      <div class="col-md-6 shadow-lg">
+        <div>
+          <h1 class="font-weight-bold my-5"
+          style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 40px;
+          ">Binary Search</h1>
+          <p class="mt-5" style="font-family: 'Ubuntu', sans-serif; font-size: 17px;">
+            In this tutorial, you will learn how Binary Search sort works. Also, you will find working examples of Binary Search in C, C++, Java and Python.</br>
+            Binary Search is a  <strong>searching algorithm</strong> for finding an element's position in a sorted array.</br>
+            In this approach, the element is always searched in the middle of a portion of an array.
+            <div class="ml-2" style="font-size: 18px;">
+              <h3 class="font-weight-bold"
+          style="
+            color:#989898;
+            font-family: 'Ubuntu', sans-serif;
+          ">Binary Search Working</h3>
+              <div class="card-body" style="font-weight: bold; font-size: 18px;">
+                <p>Binary Search Algorithm can be implemented in two ways which are discussed below.</p>
+                <p>1. Iterative Method</p>
+                <p>2. Recursive Method</p>
+            </div>
+                The recursive method follows the divide and conquer approach.
+                The general steps for both methods are discussed below.</br></br>
+                
+                  <li>Let x  be the element to be searched.</li>
+                  <li>Set two pointers low and high at the lowest and the highest positions respectively.</li>
+                  <li>Find the middle element mid of the array ie. arr[(low + high)/2].</li>
+                  <li>If x == mid, then return mid.Else, compare the element to be searched with m.</li>
+                  <li>If x > mid, compare x with the middle element of the elements on the right side of mid. This is done by setting low to low = mid + 1.</li>
+                  <li>Else, compare x with the middle element of the elements on the left side of mid. This is done by setting high to high = mid - 1.</li>
+                  <li>Repeat steps 3 to 6 until low meets high.</li>
+                  <li>x = 4 is found.</li></br>
+
+                  <h3>Iterative Method</h3>
+                  <div data-pym-src="https://www.jdoodle.com/iembed/v0/pzN?stdin=0&arg=0"></div>
+
+          <!-- This script tag contains the 
+              javascript code in the written URL -->
+          <script
+            src="https://www.jdoodle.com/assets/jdoodle-pym.min.js"
+            type="text/javascript"
+          ></script>
+          </br>
+
+                  <h3>Recursive Method</h3>
+                  <div data-pym-src="https://www.jdoodle.com/iembed/v0/pzO?stdin=0&arg=0"></div>
+
+          <!-- This script tag contains the 
+              javascript code in the written URL -->
+          <script
+            src="https://www.jdoodle.com/assets/jdoodle-pym.min.js"
+            type="text/javascript"
+          ></script>
+
+        </div>
+      </div>
+
+            </div>
+            
+            
+
+    
+          </p>
+          
+
+      <div class="col-md-3">
+        <h3 class="m-2 pb-2 ml-4">Recent Articles</h3>
+        <div class="m-2 pb-2">
+          <div class="d-flex justify-content-around">
+            <div class="" style="width: 40rem">
+              <div class="card-body">
+                <h5 class="card-title" class="font-weight-bold"
+                href="#"
+                style="
+                  color: black;
+                  font-family: 'Ubuntu', sans-serif;
+                  font-size: 20px;
+                ">Dijkstra's Algorithm</h5>
+                <p class="card-text" style="color:#989898;">
+                  Given a graph and a source vertex in the graph, find the
+                  shortest...<a href="article1.html" style="color: #087f5b;">Read More</a>
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-2 pb-2">
+          <div class="d-flex justify-content-around">
+            <div class="" style="width: 40rem">
+              <div class="card-body">
+                <h5 class="card-title" class="font-weight-bold"
+                href="#"
+                style="
+                  color: black;
+                  font-family: 'Ubuntu', sans-serif;
+                  font-size: 20px;
+                ">Dijkstra's Algorithm</h5>
+                <p class="card-text" style="color:#989898;">
+                  Given a graph and a source vertex in the graph, find the
+                  shortest...<a href="article1.html" style="color: #087f5b;">Read More</a>
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-2 pb-2">
+          <div class="d-flex justify-content-around">
+            <div class="" style="width: 40rem">
+              <div class="card-body">
+                <h5 class="card-title" class="font-weight-bold"
+                href="#"
+                style="
+                  color: black;
+                  font-family: 'Ubuntu', sans-serif;
+                  font-size: 20px;
+                ">Dijkstra's Algorithm</h5>
+                <p class="card-text" style="color:#989898;">
+                  Given a graph and a source vertex in the graph, find the
+                  shortest...<a href="article1.html" style="color: #087f5b;">Read More</a>
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{>footer}}
+    
+  </body>
+ 
+</html>
+
+
+
+
+
+
+
+
+// navbar
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script
+      src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    ></script>
+    <script
+      src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>AlgoMaster</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+      
+
+        <a
+          type="button"
+          class="navbar-brand"
+          style="font-weight: 200;"
+          href="/"
+        >
+
+          {{! <img
+            src="/Users/harshjangitwar/Desktop/Templates/login/logo.png"
+            alt="..."
+            height="36"
+          /> }}
+          AlgoMaster
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto topnav">
+           
+
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-light text-black"
+                type="button"
+                href="/question"
+                data-toggle="modal"
+                data-target="#myModal"
+              >Question of the day</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-light text-black"
+                type="button"
+                href="/sheet"
+                data-toggle="modal"
+                data-target="#myModal"
+              >DSA Sheet</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-light text-black"
+                type="button"
+                href="/editorial"
+                data-toggle="modal"
+                data-target="#myModal"
+              >Editorials</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-light text-black"
+                type="button"
+                href="/register"
+                data-toggle="modal"
+                data-target="#myModal"
+                id="register"
+              >Register</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-light text-black"
+                type="button"
+                href="/login"
+                data-toggle="modal"
+                data-target="#myModal"
+                id="signin"
+              >Login</a>
+            </li>
+          </ul>
+        </div>
+
+        </nav>
+    </div>
+  </body>
+</html>
+
+//editorial
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Editorial</title>
+  </head>
+  <body>
+    <h2>Problem A</h2>
+    <div class="row mt-3 md-3">
+      <div class="col-md-3;">
+        <h3 class="m-2 pb-2 ml-3">Recent Contests</h3>
+        <div class="m-4 pb-2">
+          <a
+            class="font-weight-bold"
+            href="#"
+            style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          "
+          >
+            Codeforces Round #741</a>
+        </div>
+        <div class="m-4 pb-2">
+          <a
+            class="font-weight-bold"
+            href="#"
+            style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          "
+          >
+            Codechef April Long Challenge</a>
+        </div>
+        <div class="m-4 pb-2">
+          <a
+            class="font-weight-bold"
+            href="#"
+            style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          "
+          >
+            LeetCode Biweekly Contest #421</a>
+        </div>
+        <div class="m-4 pb-2">
+          <a
+            class="font-weight-bold"
+            href="#"
+            style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          "
+          >
+            Code Studio Contest</a>
+        </div>
+        <div class="m-4 pb-2">
+          <a
+            class="font-weight-bold"
+            href="#"
+            style="
+            color: black;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+          "
+          >
+            Codeforces Div1 + Div2 Round #345</a>
+        </div>
+
+      </div>
+      <div class="col-md-6 shadow-lg">
+        <div>
+          <h1
+            class="font-weight-bold my-5"
+            style="
+              color: black;
+              font-family: 'Ubuntu', sans-serif;
+              font-size: 40px;
+            "
+          >
+            FLIPIT Editorial
+          </h1>
+
+          <h3>DIFFICULTY:</h3>
+          <p style="color: #989898; font-size: 18px">Easy</p>
+
+          <h3>PREREQUISITES:</h3>
+          <p style="color: #989898; font-size: 18px">None</p>
+
+          <h3>PROBLEM:</h3>
+          <p style="color: #989898; font-size: 18px">
+            You are given a binary string SS of length NN. You can perform the
+            following operation on SS: Pick any set of indices such that no two
+            picked indices are adjacent. Flip the values at the picked indices
+            (i.e. change 00 to 11 and 11 to 00). For example, consider the
+            string SS = 11011011101101. Pick the indices
+            \\\\\\\\\\\\\\\\\\\\\{1,3,6\}{1,3,6}. Flipping the values at picked
+            indices, we get \underline{1}1\underline{0}11\underline{0}1→0111111
+            1 ​ 1 0 ​ 11 0 ​ 1→0111111. Note that we cannot pick the set
+            \{2,3,5\}{2,3,5} since 22 and 33 are adjacent indices. Find the
+            minimum number of operations required to convert all the characters
+            of SS to 00.
+          </p>
+          <h3>EXPLANATION:</h3>
+          <p style="color: #989898; font-size: 18px">
+            For each test case we have a binary string of length NN. Now as no
+            adjacent bits can be flipped together. Three cases are possible:
+            <ul style="color: #989898; font-size: 18px">
+              <li>When the string is already 00, then the number of minimum
+                operations will be zero.</li>
+              <li>When no two adjacent bits are set. In this case all the set
+                bits can be converted to 00 in 11 operation.</li>
+              <li>When the string contains adjacent set bits. In this case it
+                can be shown that the answer will be 22 since all the
+                odd-indexed set bits and even-indexed set bits can be identified
+                as two different sets.</li>
+            </ul>
+            Evaluating all the above possibilities gives us the result.
+          </p>
+          <h3>TIME COMPLEXITY:</h3>
+          <p style="color: #989898; font-size: 18px">O(N) for each test case.</p>
+          <h3>Solution:</h3>
+          <a href="#" style="color: #087f5b;">Solution</a>
+        </div>
+      </div>
+
+      <div class="col-md-3"></div>
+      <div class="col-md-12">
+{{>footer}}
+      </div>
+    </div>
+    
+  </body>
+</html>
+
+//try
+{{!-- <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>AlgoMaster</title>
+  </head>
+  <body>
+    {{>navbar}}
+    
+    <div class="row">
+      <div class="col-md-3" style="background-color: rgb(213, 213, 228)">
+        <h3 class="m-2 pb-2">Table of Content</h3>
+        <div class="m-4 pb-2">
+          <a class="font-weight-bold text-dark" href="#">
+            How to create Website using HTML and CSS</a
+          >
+        </div>
+        <div class="m-4 pb-2">
+          <a class="font-weight-bold text-dark" href="#">
+            Merge sort using divide and conquer approach</a
+          >
+        </div>
+        <div class="m-4 pb-2">
+          <a class="font-weight-bold text-dark" href="#">
+            How to improve rating on coding sites like codeforces, codechef,
+            etc</a
+          >
+        </div>
+        <div class="m-4 pb-2">
+          <a class="font-weight-bold text-dark" href="#">
+            How to increase productivity.</a
+          >
+        </div>
+      </div>
+      <div class="col-md-6" style="background-color: rgb(255, 255, 255)">
+        <div>
+          <h1>Dijkstra's Algorithm</h1>
+          <p class="font-weight-bold">
+            Given a graph and a source vertex in the graph, find the shortest
+            paths from the source to all vertices in the given graph. Dijkstra’s
+            algorithm is very similar to Prim’s algorithm for minimum spanning
+            tree. Like Prim’s MST, we generate a SPT (shortest path tree) with a
+            given source as a root. We maintain two sets, one set contains
+            vertices included in the shortest-path tree, other set includes
+            vertices not yet included in the shortest-path tree. At every step
+            of the algorithm, we find a vertex that is in the other set (set of
+            not yet included) and has a minimum distance from the source. <br />
+            Below are the detailed steps used in Dijkstra’s algorithm to find
+            the shortest path from a single source vertex to all other vertices
+            in the given graph. 
+            <div class="card font-weight-bold m-4 pb-2">
+              <div class="card-body">
+                1) Create a set sptSet (shortest path tree set) that keeps track of
+            vertices included in the shortest-path tree, i.e., whose minimum
+            distance from the source is calculated and finalized. Initially,
+            this set is empty.
+            </div>
+            </div>
+            
+            <div class="card font-weight-bold m-4 pb-2">
+                <div class="card-body">
+                    2) Assign a distance value to all vertices
+                    in the input graph. Initialize all distance values as INFINITE.
+                    Assign distance value as 0 for the source vertex so that it is
+                    picked first.
+                </div>
+            </div>
+
+              <div class="card font-weight-bold m-4 pb-2">
+              <div class="card-body">
+                3) While sptSet doesn’t include all vertices
+                 ….a) Pick a vertex u which is not there in sptSet and has a minimum
+                 distance value. ….b) Include u to sptSet. ….c) Update distance value
+                 of all adjacent vertices of u. To update the distance values,
+                 iterate through all adjacent vertices. For every adjacent vertex v,
+                 if the sum of distance value of u (from source) and weight of edge
+                 u-v, is less than the distance value of v, then update the distance
+                 value of v.
+            </div>
+        </div>
+             
+          </p>
+          <div
+            data-pym-src="https://www.jdoodle.com/embed/v0/4GlG?stdin=1&arg=0"
+          ></div>
+
+          <!-- This script tag contains the 
+              javascript code in the written URL -->
+          <script
+            src="https://www.jdoodle.com/assets/jdoodle-pym.min.js"
+            type="text/javascript"
+          ></script>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="background-color: rgb(213, 213, 228)">
+        <h3>Recent Articles</h3>
+        <div class="m-2 pb-2">
+          <div class="d-flex justify-content-around">
+            <div class="card" style="width: 40rem">
+              <div class="card-body">
+                <h5 class="card-title">Dijkstra's Algorithm</h5>
+                <p class="card-text">
+                  Given a graph and a source vertex in the graph, find the
+                  shortest...
+                </p>
+                <a href="#" class="btn btn-danger">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-2 pb-2">
+          <div class="d-flex justify-content-around">
+            <div class="card" style="width: 40rem">
+              <div class="card-body">
+                <h5 class="card-title">Dijkstra's Algorithm</h5>
+                <p class="card-text">
+                  Given a graph and a source vertex in the graph, find the
+                  shortest...
+                </p>
+                <a href="#" class="btn btn-danger">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="m-2 pb-2">
+          <div class="d-flex justify-content-around">
+            <div class="card" style="width: 40rem">
+              <div class="card-body">
+                <h5 class="card-title">Dijkstra's Algorithm</h5>
+                <p class="card-text">
+                  Given a graph and a source vertex in the graph, find the
+                  shortest...
+                </p>
+                <a href="#" class="btn btn-danger">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> --}}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script> --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>AlgoMaster</title>
+  </head>
+  <body>
+    {{>navbar2}}
+    {{!-- <header class="my-2 mx-3">
+    <!-- Background image -->
+    <div class="shadow-lg p-5 mx-2" style="background-color:#f1f0f5; height: 400px">
+      <div class="row">
+        <div class="col-md-5 p-4">
+          <div class="text-darker">
+            <h1 class="mb-3" style="font-size: 80px;">AlgoMaster</h1>
+            <h5 class="mb-3">
+              <p>
+                The ultimate resource to get better in competitive programming.
+                </br>Every resource you need at one place.</p>
+              </h4>
+              <a style="color:#b7d6bf;" class="btn btn-secondary text-darker" href="#!" role="button">Join us</a>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <img class="m-4 pb-3" src="https://codeforces.org/s/55012/images/codeforces-logo-with-telegram.png"
+            alt="loading...">
+          <img class="m-4 pb-3" src="https://cdn.codechef.com/images/cc-logo.svg" alt="loading...">
+
+        </div>
+        <div class="col">
+          <div class="pb-3"><img style="height: 150px;" src="https://cdn-icons-png.flaticon.com/512/74/74897.png"
+              alt="loading..."></div>
+          <div class="pb-1"><img style="height: 150px;" src="https://cdn-icons-png.flaticon.com/128/154/154878.png"
+              alt="loading..."></div>
+        </div>
+      </div>
+    </div>
+  </header> --}}
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner mt-3 mx-5 shadow-lg" style="width: auto;"> 
+    <div class="carousel-item active" style="height: 400px;">
+      
+        <div><h2 class="shadow-lg my-4" style="text-align: center; font-size: 150px;">< AlgoMaster ></h2></div>
+        
+    </div>
+
+    <div class="carousel-item" style="height: 400px; background-color:#f1f0f5;">
+      <div class="row">
+        <div class="col">
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20191113114209/CTutorial.png" style="align-content: center;" alt="..."></div>
+      <div class="col">
+      <ul class="mr-3">
+        <li><h2>Beginners</h2></li>
+        <li><h2>Intermediate</h2></li>
+        <li><h2>Advanced</h2></li>
+      </ul>
+      </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="height: 400px; background-color:#f1f0f5;">
+             <div class="row">
+        <div class="col">
+      <img src="https://cdn.codechef.com/sites/all/themes/abessive/cc-logo.png" style="align-content: center;" alt="..."></div>
+      <div class="col">
+      <ul class="mr-3">
+        <li><h2>Read Editorial</h2></li>
+        <li><h2>Submit There</h2></li>
+        <li><h2>Get Accepted</h2></li>
+      </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <div class="row">
+      <div class="col-md-6 col-12 ml-5">
+        <!--  -->
+        <!--  -->
+        <div class="content my-5">
+          <div class="head my-1">
+            <a
+              class="font-weight-bold"
+              href="/vector"
+              style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+              "
+            >Vector in C++</a>
+          </div>
+          <div class="text" style="color: #989898">
+            In this tutorial, we will learn about vectors in C++ with the help of examples.
+In C++, vectors are used to store elements of similar ...
+            <span class="read-more">
+              <a style="color: #087f5b" href="/vector">Read More</a>
+            </span>
+          </div>
+        </div>
+
+        <!--  -->
+        <hr class="style15" />
+        <!--  -->
+
+        <div class="content my-5">
+          <div class="head my-1">
+            <a
+              class="font-weight-bold"
+              href="/binary_search"
+              style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+              "
+            >Binary Search Algorithm</a>
+          </div>
+          <div class="text" style="color: #989898">
+            Binary Search is a searching algorithm for finding an element's position in a sorted array.
+In this approach, the element is...
+            <span class="read-more">
+              <a style="color: #087f5b" href="/binary_search">Read More</a>
+            </span>
+          </div>
+        </div>
+
+        <!--  -->
+        <hr class="style15" />
+        <!--  -->
+        <div class="content my-5">
+          <div class="head my-1">
+            <a
+              class="font-weight-bold"
+              href="#"
+              style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+              "
+            >How to setup sublime Text for competitive programming?</a>
+          </div>
+          <div class="text" style="color: #989898">
+            Sublime Text is a text editor for coding. It has a smooth user interface and other exciting features. During the live contest...
+            <span class="read-more">
+              <a style="color: #087f5b" href="#">Read More</a>
+            </span>
+          </div>
+        </div>
+
+        <!--  -->
+        <hr class="style15" />
+        <!--  -->
+
+        <div class="content my-5">
+          <div class="head my-1">
+            <a
+              class="font-weight-bold"
+              href="#"
+              style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+              "
+            >Which language is best for competitive programming?</a>
+          </div>
+          <div class="text" style="color: #989898">
+            To get better in competitve programming you need to first clear your
+            basics i.e you need to know basic algorithms like...
+            <span class="read-more">
+              <a style="color: #087f5b" href="#">Read More</a>
+            </span>
+          </div>
+        </div>
+
+        <!--  -->
+        <hr class="style15" />
+        <!--  -->
+
+        <!--  -->
+      </div>
+      <!--                                            -->
+
+      <div class="col px-5 my-5">
+        <div class="mx-5">
+          <h4
+            style="
+              font-family: 'Space Grotesk', sans-serif;
+              text-align: left;
+              color: #087f5b;
+            "
+          >
+            Featured Articles
+          </h4>
+          <div class="my-5">
+            <h4 style="color: #989898; text-align: left; float: left">
+              01 &nbsp;
+            </h4>
+            <a
+              class="font-weight-bold"
+              href="#"
+              style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+                text-align: center;
+                float: center;
+              "
+            >
+              STL in C++</a>
+          </div>
+
+          <div class="my-5">
+            <h4 style="color: #989898; text-align: left; float: left">
+              02 &nbsp;
+            </h4>
+            <a
+              class="font-weight-bold"
+              href="#"
+              style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+                text-align: center;
+                float: center;
+              "
+            >
+              Sorting Techniques</a>
+          </div>
+          <div class="my-5">
+            <h4 style="color: #989898; text-align: left; float: left">
+              03 &nbsp;
+            </h4>
+            <a
+              class="font-weight-bold"
+              href="#"
+              style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+                text-align: center;
+                float: center;
+              "
+            >
+              Difference between set and multiset</a>
+          </div>
+          <div class="my-5">
+            <h4 style="color: #989898; text-align: left; float: left">
+              04 &nbsp;
+            </h4>
+            <a
+              class="font-weight-bold"
+              href="/editorial"
+              style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+                text-align: center;
+                float: center;
+              "
+            >
+              Fast I/O for competitive programming</a>
+          </div>
+        </div>
+        <div class="mx-5">
+          <h4
+            style="
+              font-family: 'Space Grotesk', sans-serif;
+              text-align: left;
+              color: #087f5b;
+            "
+          >
+            Recent Contest Editorials
+          </h4>
+          <div class="my-5">
+            <h4 style="color: #989898; text-align: left; float: left">
+              -> &nbsp;
+            </h4>
+            <a
+              class="font-weight-bold"
+              href="/editorial"
+              style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+                text-align: center;
+                float: center;
+              "
+            >
+              Codeforces Div2 Educational #732</a>
+          </div>
+          <div class="my-5">
+            <h4 style="color: #989898; text-align: left; float: left">
+              -> &nbsp;
+            </h4>
+            <a
+              class="font-weight-bold"
+              href="/editorial"
+              style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+                text-align: center;
+                float: center;
+              "
+            >
+              Codeforces Div1 + Div2 CodeTon #210</a>
+          </div>
+          <div class="my-5">
+            <h4 style="color: #989898; text-align: left; float: left">
+              -> &nbsp;
+            </h4>
+            <a
+              class="font-weight-bold"
+              href="/editorial"
+              style="
+                color: black;
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 20px;
+                text-align: center;
+                float: center;
+              "
+            >
+              Codechef April's Cook-Off</a>
+          </div>
+        </div>
+      </div>
+
+      <!--                                          -->
+    </div>
+     
+
+
+
+  </body>
+</html>
+//index
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<link rel="stylesheet" href="css/style.css" />
+  
+  <title>AlgoMaster</title>
+  
+</head>
+
+<body>
+
+  {{>navbar}}
+
+  <header>
+    <!-- Background image -->
+    <div class="shadow-lg p-5 mx-5" style="background-color:#f1f0f5; height: 400px">
+      <div class="row">
+        <div class="col-md-5 p-4">
+          <div class="text-darker">
+            <h1  class="mb-3" style="font-size: 60px;">< AlgoMaster ></h1>
+            <h5 class="mb-3">
+              <p>
+                The <b>ultimate</b> resource to get better in competitive programming.
+                </br>Every resource you need at one place.</p>
+              </h4>
+              <a style="color:#21D192;" class="btn btn-dark text-darker" href="#!" role="button">Join us</a>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <img class="m-4 pb-3" src="https://codeforces.org/s/55012/images/codeforces-logo-with-telegram.png"
+            alt="loading...">
+          <img class="m-4 pb-3" src="https://cdn.codechef.com/images/cc-logo.svg" alt="loading...">
+
+        </div>
+        <div class="col">
+          <div class="pb-3"><img style="height: 150px;" src="https://cdn-icons-png.flaticon.com/512/74/74897.png"
+              alt="loading..."></div>
+          <div class="pb-1"><img style="height: 150px;" src="https://cdn-icons-png.flaticon.com/128/154/154878.png"
+              alt="loading..."></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- new section -->
+
+
+<div class="mx-5 my-5">
+  <h2  style="text-align: center;" >What you will get?</h2>
+ <div class="row row-cols-1 my-3 mx-3 row-cols-md-3 g-4">
+  <div class="col">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="list-outline"></ion-icon>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Structured Content</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="checkmark-done-outline"></ion-icon>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Contest Editorials</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="documents-outline"></ion-icon>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Data Structure Sheets</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col my-5">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="code-slash-outline"></ion-icon>
+    </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Quality Codes</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col my-5">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="logo-electron"></ion-icon>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Space and Time complexity Analysis</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col my-5">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="bar-chart-outline"></ion-icon>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Better Rankings</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- new section -->
+
+
+
+{{!-- new section --}}
+
+{{>footer}}
+  
+</body>
+
+</html>
+
+
+
+
+//index
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<link rel="stylesheet" href="css/style.css" />
+  
+  <title>AlgoMaster</title>
+  
+</head>
+
+<body>
+
+  {{>navbar}}
+
+  <header>
+    <!-- Background image -->
+    <div class="shadow-lg p-5 mx-5" style="background-color:#f1f0f5; height: 400px">
+      <div class="row">
+        <div class="col-md-5 col-12 p-4">
+          <div class="text-darker">
+            <h1  class="mb-3" style="font-size: 60px;">< AlgoMaster ></h1>
+            <h5 class="mb-3">
+              <p>
+                The <b>ultimate</b> resource to get better in competitive programming.
+                </br>Every resource you need at one place.</p>
+              </h4>
+              <a style="color:#21D192;" class="btn btn-dark text-darker" href="/register" role="button">Join us</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 p-3">
+              <img class="m-4 pb-3" src="https://codeforces.org/s/55012/images/codeforces-logo-with-telegram.png"
+            alt="loading...">
+          <img class="m-4 pb-3" src="https://cdn.codechef.com/images/cc-logo.svg" alt="loading...">
+
+        </div>
+        <div class="col-md-3 col-12">
+          <div class="pb-3"><img style="height: 150px;" src="https://cdn-icons-png.flaticon.com/512/74/74897.png"
+              alt="loading..."></div>
+          <div class="pb-1"><img style="height: 150px;" src="https://cdn-icons-png.flaticon.com/128/154/154878.png"
+              alt="loading..."></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- new section -->
+
+
+<div class="mx-5 my-5">
+  <h2  style="text-align: center;" >What you will get?</h2>
+ <div class="row row-cols-1 my-3 mx-3 row-cols-md-3 g-4">
+  <div class="col">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="list-outline"></ion-icon>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Structured Content</h5>
+        <p class="card-text">Quality content in well structured manner which will help you to cover the topics faster.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="checkmark-done-outline"></ion-icon>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Contest Editorials</h5>
+        <p class="card-text">All edtiorials of recently held contests with a proper explanation. Get the best out of it by understanding the concept in the problem.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="documents-outline"></ion-icon>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Data Structure Sheets</h5>
+        <p class="card-text">Well desgin data structure sheets of hand picked questions to boost your problem solving skills.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col my-5">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="code-slash-outline"></ion-icon>
+    </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Quality Codes</h5>
+        <p class="card-text">The best quality code with explanation of time and space complexity and the approach behind the problem.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col my-5">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="logo-electron"></ion-icon>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Space and Time complexity Analysis</h5>
+        <p class="card-text">Proper space and time complexity analysis to get better idea how to reduce it in other problems.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col my-5">
+    <div >
+      <div style="text-align: center;">
+        <ion-icon name="bar-chart-outline"></ion-icon>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" style="text-align:center; color: #1abc9c;">Better Rankings</h5>
+        <p class="card-text">Get the better ranks in contests which will boost your ratings and problem solving skills.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- new section -->
+
+
+
+{{!-- new section --}}
+
+{{>footer}}
+  
+</body>
+
+</html> 
+
+

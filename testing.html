@@ -1,0 +1,142 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      .divider:after,
+      .divider:before {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background: #eee;
+      }
+      .h-custom {
+        height: calc(100% - 73px);
+      }
+      @media (max-width: 450px) {
+        .h-custom {
+          height: 100%;
+        }
+      }
+      .topnav a:hover {
+        border-bottom: 3px solid #20c997;
+      }
+
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+      h2 {
+        color: #000;
+        font-size: 26px;
+        font-weight: 300;
+        text-align: center;
+        position: relative;
+        margin: 30px 0 60px;
+      }
+      h2::after {
+        content: '';
+        width: 100px;
+        position: absolute;
+        margin: 0 auto;
+        height: 4px;
+        border-radius: 1px;
+        background: #1abc9c;
+        left: 0;
+        right: 0;
+        bottom: -20px;
+      }
+      ion-icon {
+        font-size: 80px;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <title>AlgoMaster</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a type="button" class="navbar-brand" style="font-weight: 200" href="/">
+          AlgoMaster
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto topnav">
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-light text-black"
+                type="button"
+                href="/question"
+                data-toggle="modal"
+                data-target="#myModal"
+                >Question of the day</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-light text-black"
+                type="button"
+                href="/sheet"
+                data-toggle="modal"
+                data-target="#myModal"
+                >DSA Sheet</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-light text-black"
+                type="button"
+                href="/editorial"
+                data-toggle="modal"
+                data-target="#myModal"
+                >Editorials</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-light text-black"
+                type="button"
+                href="/register"
+                data-toggle="modal"
+                data-target="#myModal"
+                id="register"
+                >Register</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-light text-black"
+                type="button"
+                href="/login"
+                data-toggle="modal"
+                data-target="#myModal"
+                id="signin"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
