@@ -37,6 +37,7 @@ const employeeSchema = new mongoose.Schema({
 });
 
 //Generating Tokens
+// working with instance
 
 employeeSchema.methods.generateAuthToken = async function () {
   try {

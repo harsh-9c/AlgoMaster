@@ -21,9 +21,12 @@ const partials_path = path.join(__dirname, '../templates/partials');
 
 app.use(express.json());
 app.use(cookieParser());
+// To prevent undefined results
 app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static(static_path));
+// telling express application that our view engine is hbs by default
+// view engine used for rendering web pages
 app.set('view engine', 'hbs');
 app.set('views', template_path);
 hbs.registerPartials(partials_path);
@@ -32,7 +35,7 @@ var transport = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'menotify32@gmail.com',
-    pass: 'tafwuc-qyfcys-vykcY4',
+    pass: 'llflpbpswsjyjqqb',
   },
 });
 
@@ -71,6 +74,10 @@ app.get('/try', (req, res) => {
   res.render('try');
 });
 
+app.get('/compiler', (req, res) => {
+  res.render('compiler');
+});
+
 // Logout
 
 app.get('/logout', auth, async (req, res) => {
@@ -106,7 +113,7 @@ app.post('/register', async (req, res) => {
       const token = await registerEmployee.generateAuthToken();
 
       res.cookie('jwt', token, {
-        expires: new Date(Date.now() + 60000000),
+        expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
         httpOnly: true,
       });
 
@@ -114,7 +121,7 @@ app.post('/register', async (req, res) => {
         from: 'menotify32@gmail.com',
         to: email,
         subject: 'Welcome to AlgoMaster!',
-        text: 'AlgoMaster is a competitve programming content site. It contains well written and quality code which will help you to upskill your learning. Best Regards AlgoMaster Team.',
+        text: `AlgoMaster is a competitve programming content site. It contains well written and quality code which will help you to upskill your learning. Best Regards AlgoMaster Team.`,
       };
 
       transport.sendMail(mailOptions, function (error, info) {
@@ -149,7 +156,7 @@ app.post('/login', async (req, res) => {
     // console.log(token);
 
     res.cookie('jwt', token, {
-      expires: new Date(Date.now() + 600000),
+      expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
       httpOnly: true,
       // secure: true,
     });
